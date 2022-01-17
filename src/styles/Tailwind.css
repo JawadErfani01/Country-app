@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+.select {
+    @apply px-2  py-3 border-none  dark:bg-slate-50 dark:text-slate-800 cursor-pointer focus:outline-none rounded-md bg-slate-800   text-center text-white;
+  }
+@tailwind utilities;

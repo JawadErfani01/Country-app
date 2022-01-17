@@ -1,11 +1,21 @@
+import{Routes,Route,BrowserRouter}from 'react-router-dom'
+import './styles/App.css'
+import Detail from './pages/Detail';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import  {useGlobalContext}  from './context'
 function App() {
+  const{Light}=useGlobalContext ()
   return (
-    <main className="flex flex-col font-serif justify-center items-center text-white  h-screen bg-slate-800">
-      <h1 className="text-4xl hover:text-blue-600">Frontend With jawad</h1>
-      <p className="p-4 m-2 text-xl hover:bg-red-400 hover:rounded-xl">
-        Tailwind V3
-      </p>
-    </main>
+    <div className={`${Light?'':'dark'} flex  justify-center min-h-screen  `}>
+    <BrowserRouter >
+   <Routes>
+     <Route path="/" element={<Home/>} />
+     <Route path="/Detail" element={<Detail/>}/>
+     <Route path="*" element={<NotFound/>} />
+   </Routes>
+    </BrowserRouter>
+    </div>
   );
 }
 

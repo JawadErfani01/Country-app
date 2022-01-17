@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.css';
+import './styles/Tailwind.css';
 import App from './App';
-
+import {AppProvider} from './context'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <AppProvider>
     <App />
-  </React.StrictMode>,
+  </AppProvider>,
   document.getElementById('root')
 );
 
