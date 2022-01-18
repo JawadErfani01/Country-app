@@ -1,14 +1,14 @@
-import React from 'react'
-import SearchForm from '../components/CountryPageContents/SearchForm'
-import Country from '../components/CountryPageContents/Country'
-function Home() {
-    return (
-        <div className="">
+import React from "react";
+import SearchForm from "../components/CountryPageContents/SearchForm";
+import Country from "../components/CountryPageContents/Country";
 
-          <SearchForm/>
-          <Country/>
-        </div>
-    )
+function Home() {
+  return (
+    <div className="">
+      <SearchForm />
+      <Country />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
