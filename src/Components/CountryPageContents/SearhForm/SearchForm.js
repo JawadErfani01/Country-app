@@ -7,7 +7,7 @@ function SearchForm() {
   return (
     <div className="flex justify-center flex-col font-serif items-center pb-4">
       <h2 className="text-center text-3xl mt-6 m-4 capitalize">
-        search countray name
+        search country name
       </h2>
       <div className="flex lg:flex-row flex-col justify-center items-center p-6 dark:shadow-xl  dark:shadow-slate-600  w-5/6 sm:w-2/3 shadow-xl">
         <div className="lg:flex-1 relative w-full  lg:mb-0  mb-4">
@@ -21,7 +21,7 @@ function SearchForm() {
           />
           <span className="absolute top-3 left-5 opacity-50 dark:text-slate-800 "><FaSearch /></span>
         </div>
-        <div className="flex-2 mx-4">
+        <div className="flex-2 mx-0 md:mx-4">
           <select
             onChange={(e) => FilterByRegion(e.target.value)}
             className="select"

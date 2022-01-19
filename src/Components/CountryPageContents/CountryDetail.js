@@ -54,7 +54,7 @@ function Detail() {
           <p className="my-2 md:py-2"><span className=" font-bold">CallingCode:  </span>{callingCodes}</p>
           <p className="my-2 md:py-2"><span className=" font-bold">NumericCode:  </span>{numericCode}</p>
           <p className="my-2 md:py-2"><span className=" font-bold">Languages:  </span> {languages.map((language) => language.name + ", ")}</p>
-          <p className="my-2 md:py-2"><span className=" font-bold">Borders:  </span> {borders.map((border) => <span className="mx-2">{border + ","}</span>)}</p>
+          <p className="my-2 md:py-2"><span className=" font-bold">Borders:  </span> {borders.map((border) => <span className="md:mx-2 mx-1">{border + ","}</span>)}</p>
         </div>
       </div>
     </div>
