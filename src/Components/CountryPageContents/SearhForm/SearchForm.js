@@ -16,7 +16,7 @@ function SearchForm() {
             onChange={(e) => searchCoutry(e.target.value)}
             value={Search}
             name="name"
-            className="w-full mr-4  rounded-full shadow-lg border  text-slate-800 focus:outline-none pl-10 px-4 lg:px-12 py-2 "
+            className="w-full mr-4  rounded-full shadow-lg border  text-slate-800 focus:outline-none pl-10 px-4   lg:px-12  py-2 "
             placeholder="Name..."
           />
           <span className="absolute top-3 left-5 opacity-50 dark:text-slate-800 "><FaSearch /></span>
@@ -34,7 +34,7 @@ function SearchForm() {
             <option value="europe">Europe</option>
             <option value="oceania">Oceania</option>
           </select>
-          <span className="mx-3 ">NCountries: {Country.length}</span>
+          <span className="mx-1 md:mx-3 ">NCountries: {Country.length}</span>
         </div>
       </div>
     </div>

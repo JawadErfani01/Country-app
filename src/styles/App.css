@@ -1,66 +1,4 @@
-.main::after {
-  content: "";
-  height: 85px;
-  width: 100%;
-  position: absolute;
-  bottom: -60px;
-  z-index: -10;
-  transform: skewY(-3deg);
-  background-color: rgb(17, 24, 39);
-  margin-bottom: 10px;
-}
-
-.text {
-  animation: slideInFromLeft 1s ease-in;
-}
-.LoginForm {
-  animation: slideInFromRight 1s ease-in;
-}
-.navImage {
-  animation: slideInFromRight 1s ease-out;
-}
-.Modal {
-  animation: slideInFromTop 1s ease-out;
-}
-.Detail {
-  animation: slideInFromRight 1s ease-in;
-}
-/* Animation */
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
+/* just Loading styles is here */
 .center {
   display: flex;
   justify-content: center;
@@ -87,7 +25,7 @@
   }
   100% {
     transform: rotate(360deg);
-    box-shadow: 2px 5px 2px rgb(17,24,39);
+    box-shadow: 2px 5px 2px rgb(17, 24, 39);
   }
 }
 
@@ -97,16 +35,15 @@
   text-transform: capitalize;
   list-style: 200px;
   animation: text 3s ease-in-out infinite;
- }
+}
 @keyframes text {
-  0%{
+  0% {
     color: transparent;
   }
   50% {
-    color:#18b201;
-
+    color: #18b201;
   }
-  100%{
+  100% {
     color: #0456c8;
   }
 }
