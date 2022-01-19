@@ -1,5 +1,5 @@
 import React from "react";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../../context";
 import {FaSearch} from 'react-icons/fa'
 function SearchForm() {
   const { searchCoutry, Search, FilterByRegion, Country } = useGlobalContext();

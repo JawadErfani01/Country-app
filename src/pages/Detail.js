@@ -1,5 +1,5 @@
 import React from 'react'
-import CountryDetail from '../components/CountryPageContents/CountryDetail'
+import CountryDetail from '../Components/CountryPageContents/CountryDetail'
 function Detail() {
     return (
         <div>

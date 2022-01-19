@@ -1,7 +1,6 @@
 import React from "react";
-import SearchForm from "../components/CountryPageContents/SearchForm";
-import Country from "../components/CountryPageContents/Country";
-
+import Country from "../Components/CountryPageContents/Country";
+import SearchForm from '../Components/CountryPageContents/SearhForm/SearchForm'
 function Home() {
   return (
     <div className="">

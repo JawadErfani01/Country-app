@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useGlobalContext } from "../../context";
 import Loading from "../Extra/Loading";
 import CountryList from "./CountryList";
-import Pagination from "./Pagination";
+import Pagination from "./Pagination/Pagination";
 function Country() {
   const [Currentpage, setCurrentpage] = useState(1);
   const [postPerpage, setpostPerpage] = useState(25);

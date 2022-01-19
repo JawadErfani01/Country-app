@@ -4,7 +4,7 @@ import Detail from './pages/Detail';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import { useGlobalContext } from './context'
-import Header from './components/Header/Header';
+import Header from './Components/CountryPageContents/Header/Header';
 function App() {
   const { Light } = useGlobalContext()
   return (
