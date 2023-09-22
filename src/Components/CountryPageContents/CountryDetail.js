@@ -44,17 +44,41 @@ function Detail() {
             <p className="mt-1 md:mt-0">Capital: {capital}</p>
           </div>
           <div className="font-bold md:flex justify-between  m-2 mb-0 md:mt-4 md:mx-4">
-            <p>Population: <span className="font-medium">{population}</span></p>
-            <p>Area: <span className="font-medium">{area}</span></p>
+            <p>
+              Population: <span className="font-medium">{population}</span>
+            </p>
+            <p>
+              Area: <span className="font-medium">{area}</span>
+            </p>
           </div>
         </div>
         <div className="flex-1  font-sans  md:ml-16 mt-0 text-lg m-2 md:px-4 md:py-1">
-          <p className="my-2 md:py-2"><span className=" font-bold">Region:  </span>{region}</p>
-          <p className="my-2 md:py-2"><span className=" font-bold">SubRegion:  </span>{subregion}</p>
-          <p className="my-2 md:py-2"><span className=" font-bold">CallingCode:  </span>{callingCodes}</p>
-          <p className="my-2 md:py-2"><span className=" font-bold">NumericCode:  </span>{numericCode}</p>
-          <p className="my-2 md:py-2"><span className=" font-bold">Languages:  </span> {languages.map((language) => language.name + ", ")}</p>
-          <p className="my-2 md:py-2"><span className=" font-bold">Borders:  </span> {borders.map((border) => <span className="md:mx-2 mx-1">{border + ","}</span>)}</p>
+          <p className="my-2 md:py-2">
+            <span className=" font-bold">Region: </span>
+            {region}
+          </p>
+          <p className="my-2 md:py-2">
+            <span className=" font-bold">SubRegion: </span>
+            {subregion}
+          </p>
+          <p className="my-2 md:py-2">
+            <span className=" font-bold">CallingCode: </span>
+            {callingCodes}
+          </p>
+          <p className="my-2 md:py-2">
+            <span className=" font-bold">NumericCode: </span>
+            {numericCode}
+          </p>
+          <p className="my-2 md:py-2">
+            <span className=" font-bold">Languages: </span>{" "}
+            {languages?.map((language) => language.name + ", ")}
+          </p>
+          <p className="my-2 md:py-2">
+            <span className=" font-bold">Borders: </span>{" "}
+            {borders?.map((border) => (
+              <span className="md:mx-2 mx-1">{border + ","}</span>
+            ))}
+          </p>
         </div>
       </div>
     </div>
