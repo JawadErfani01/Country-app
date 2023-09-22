@@ -5,12 +5,12 @@ import Loading from "../Extra/Loading";
 import CountryList from "./CountryList";
 import Pagination from "./Pagination/Pagination";
 function Country() {
+  const { Country, loading } = useGlobalContext();
   const [Currentpage, setCurrentpage] = useState(1);
   const [postPerpage, setpostPerpage] = useState(25);
-  const { Country, loading } = useGlobalContext();
   const indexoflastpost = Currentpage * postPerpage;
   const indecoffirstpost = indexoflastpost - postPerpage;
-  const currentpost = Country.slice(indecoffirstpost, indexoflastpost);
+  const currentCountry = Country.slice(indecoffirstpost, indexoflastpost);
   const paginate = (pageNumbers) => setCurrentpage(pageNumbers);
   if (loading) {
     return <Loading />;
@@ -26,7 +26,7 @@ function Country() {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:mx-2 mx-0 ">
-        {currentpost.map((item, index) => (
+        {currentCountry.map((item, index) => (
           <Link to={"/Detail"} state={item} key={index}>
             <CountryList item={item} />
           </Link>

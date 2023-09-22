@@ -18,8 +18,8 @@ function Detail() {
     numericCode,
   } = state;
   console.log(state);
-  let history = useNavigate();
-  const getHome = () => history("/");
+  let Navigate = useNavigate();
+  const getHome = () => Navigate("/");
   return (
     <div className="md:ml-16 m-8 mt-4 ">
       <button

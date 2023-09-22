@@ -1,8 +1,8 @@
 import React from "react";
 import { useGlobalContext } from "../../../context";
-import {FaSearch} from 'react-icons/fa'
+import { FaSearch } from "react-icons/fa";
 function SearchForm() {
-  const { searchCoutry, Search, FilterByRegion, Country } = useGlobalContext();
+  const { searchCountry, Search, FilterByRegion, Country } = useGlobalContext();
 
   return (
     <div className="flex justify-center flex-col font-serif items-center pb-4">
@@ -13,13 +13,15 @@ function SearchForm() {
         <div className="lg:flex-1 relative w-full  lg:mb-0  mb-4">
           <input
             type="text"
-            onChange={(e) => searchCoutry(e.target.value)}
+            onChange={(e) => searchCountry(e.target.value)}
             value={Search}
             name="name"
             className="w-full mr-4  rounded-full shadow-lg border  text-slate-800 focus:outline-none pl-10 px-4   lg:px-12  py-2 "
             placeholder="Name..."
           />
-          <span className="absolute top-3 left-5 opacity-50 dark:text-slate-800 "><FaSearch /></span>
+          <span className="absolute top-3 left-5 opacity-50 dark:text-slate-800 ">
+            <FaSearch />
+          </span>
         </div>
         <div className="flex-2 mx-0 md:mx-4">
           <select
