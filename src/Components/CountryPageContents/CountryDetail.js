@@ -17,7 +17,6 @@ function Detail() {
     callingCodes,
     numericCode,
   } = state;
-  console.log(state);
   let Navigate = useNavigate();
   const getHome = () => Navigate("/");
   return (
